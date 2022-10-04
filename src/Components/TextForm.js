@@ -37,7 +37,7 @@ export default function TextForm(props) {
       </div>
       <div>
         <h2 >Word Count</h2>
-        <p >{text.split(" ").filter((element)=>{return element.length!==0}).length}</p>
+        <p >{text.split(/\s+/).filter((element)=>{return element.length!==0}).length}</p>
         <p >{text.length}</p>
       </div>
     </div>
